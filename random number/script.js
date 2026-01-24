@@ -1,10 +1,8 @@
-var num = 11;
-var guessNum = Number(prompt("Guess Number"));
-if(num != guessNum){
-    while(guessNum != num){
-          guessNum = Number(prompt("You Guesses Wrong Try Again"));   
-}
-    if(num === guessNum){
-        alert("You Guessed Right Congratulation");
-    }
+var num = 9;
+var guessNum = Math.floor(Math.random() * 10 + 1);
+console.log(guessNum);
+if(num === guessNum){
+    alert("Congratulation You guessed right number");
+}else{
+    alert("You guessed wrong number try again");
 }
