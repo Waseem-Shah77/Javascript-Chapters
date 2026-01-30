@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        th, td{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            text-align: center;
+            font-size: 20px;
+        }
+        th, td{
+            width: 200px;
+        }
+         .btns{
+            text-align: center;
+            margin: 20px 0px;
+         }
+        .btns > button{
+            width: 18%;
+            cursor: pointer;
+            padding: 10px 5px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Signal Color</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="red"></td>    
+                <td class="forRed"></td>
+            </tr>
+            <tr>
+                <td class="yellow"></td>
+                <td class="forYellow"></td>
+            </tr>
+            <tr>
+                <td class="green"></td>
+                <td class="forGreen"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <!-- CALCULATOR  -->
+     <div class="container" style="border: 1px solid black; width: 250px; height: 320px; padding: 10px 5px; transform: translate(150%, 30%);">
+        <input class="inp" type="text" placeholder="0" style="width: 100%; height: 40px; font-size: 20px; padding: 0px 10px; border-radius: 20px; outline: none;">
+        <div class="btns">
+            <button onclick="calcula('7')">7</button>
+            <button onclick="calcula('8')">8</button>
+            <button onclick="calcula('9')">9</button>
+            <button onclick="calcula('*')">x</button>
+            <button onclick="calcula('AC')">AC</button>
+            <button onclick="calcula('4')">4</button>
+            <button onclick="calcula('5')">5</button>
+            <button onclick="calcula('6')">6</button>
+            <button onclick="calcula('-')">-</button>
+            <button onclick="calcula('/')">/</button>
+            <button onclick="calcula('1')">1</button>
+            <button onclick="calcula('2')">2</button>
+            <button onclick="calcula('3')">3</button>
+            <button onclick="calcula('+')">+</button>
+            <button onclick="calcula('=')">=</button>
+            <button onclick="calcula('0')">0</button>
+            <button onclick="calcula('.')">.</button>
+
+        </div>
+     </div>
+</body>
+<script src="script.js"></script>
+</html>
